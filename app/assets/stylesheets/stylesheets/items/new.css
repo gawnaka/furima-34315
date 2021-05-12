@@ -72,7 +72,11 @@
 
 /* /共通 */
 
+<<<<<<< Updated upstream
 /* 商品画像 */
+=======
+/* 出品画像 */
+>>>>>>> Stashed changes
 .img-upload {
   display: flex;
   justify-content: space-between;
@@ -89,7 +93,11 @@
   margin-bottom: 15px;
 }
 
+<<<<<<< Updated upstream
 /* /商品画像 */
+=======
+/* /出品画像 */
+>>>>>>> Stashed changes
 
 /* 商品名と商品説明 */
 .new-items {
