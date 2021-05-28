@@ -30,8 +30,13 @@ Things you may want to cover:
 |--------------------　|---------------------|-------------------------|
 | email              　| string              | null: false             |
 | password           　| string              | null: false             |
-| name               　| string              | null: false             |
-| nickname             |   string            | null: false             |
+| last_name           | string              | null: false             |
+| first_name          | string              | null: false             |
+| last_name_kana      | string              | null: false             |
+| first_name_kana     | string              | null: false             |
+|  birth＿date         |day            　　 | null: false             |
+| nickname            |string            　　| null: false             |
+
 
 ### Association
 
@@ -43,8 +48,9 @@ Things you may want to cover:
 | Column                              | Type       | Options           |
 |-------------------------------------|------------|-------------------|
 |  weight-bold-text                   | text       | null: false       |
-|  price-content                       | text      | null: false       |
-|  user                                | references | foreign_key: true |
+|  price-content                      | text      | null: false       |
+|　sell-price　　　　　　　　　　　　　　　| text      | null: false       |
+|  user                               | references | foreign_key: true |
 
 ### Association
 
