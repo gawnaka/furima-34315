@@ -28,8 +28,8 @@ Things you may want to cover:
 
 | Column             　| Type                | Options                 |
 |--------------------　|---------------------|-------------------------|
-| email              　| string              | null: false             |
-| encrypted_password  あ| string              | null: false             |
+| email              　| string              | null: false, default           |
+| encrypted_password  あ| string              | null: false,default             |
 | last_name           | string              | null: false             |
 | first_name          | string              | null: false             |
 | last_name_kana      | string              | null: false             |
