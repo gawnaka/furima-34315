@@ -26,23 +26,23 @@ Things you may want to cover:
 
 ## users table
 
-| Column             　| Type                | Options                 |
-|--------------------　|---------------------|-------------------------|
-| email              　| string              | null: false, default           |
-| encrypted_password  あ| string              | null: false,default             |
+| Column             | Type                | Options                 |
+|--------------------|---------------------|-------------------------|
+| email              | string              | null: false,            |
+| encrypted_password  | string              | null: false,default             |
 | last_name           | string              | null: false             |
 | first_name          | string              | null: false             |
 | last_name_kana      | string              | null: false             |
 | first_name_kana     | string              | null: false             |
-|  birth＿date         |day            　　 | null: false             |
-| nickname            |string            　　| null: false             |
+|  birth＿date         |date             | null: false             |
+| nickname            |string            | null: false             |
 
 
 ### Association
 
-* has_many :item
-* has_many :comment
-* has_many :order
+* has_many :items
+* has_many :comments
+* has_many :orders
 
 ## items table
 
@@ -50,11 +50,11 @@ Things you may want to cover:
 |-------------------------------------|------------|-------------------|
 |  weight-bold-text                   | text       | null: false       |
 |  price-content                      | text       | null: false       |
-|　sell-price　　　　　　　　　　　　　　　|  integer   | null: false       |
+|　sell-pricz|                        integer      | null: false        |
 |  user                               | references | foreign_key: true |
 
 ### Association
-
+ 
 - belongs_to :user
 - has_many :comments
 
@@ -63,7 +63,7 @@ Things you may want to cover:
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
 | text        | text       | null: false       |
-| items       | references | foreign_key: true |
+| item        | references | foreign_key: true |
 | user        | references | foreign_key: true |
 
 ### Association
@@ -82,3 +82,17 @@ Things you may want to cover:
 
 - belongs_to :item
 - belongs_to :user
+
+## address table
+
+| Column      | Type       | Options           |
+|-------------|------------|-------------------|
+| form-text   | text       | null: false       |
+| items       | references | foreign_key: true |
+| user        | references | foreign_key: true |
+
+### Association
+
+- belongs_to :item
+- belongs_to :user
+- belongs_to :order
