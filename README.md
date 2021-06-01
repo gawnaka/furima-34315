@@ -48,9 +48,9 @@ Things you may want to cover:
 
 | Column                              | Type       | Options           |
 |-------------------------------------|------------|-------------------|
-|  weight-bold-text                   | text       | null: false       |
-|  price-content                      | text       | null: false       |
-|　sell-pricz|                        integer      | null: false        |
+|  weight_bold-text                   | text       | null: false       |
+|  price_content                      | text       | null: false       |
+|　sell_pricz|                        integer      | null: false        |
 |  user                               | references | foreign_key: true |
 
 ### Association
@@ -75,24 +75,23 @@ Things you may want to cover:
 
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
-| items       | references | foreign_key: true |
+| item       | references | foreign_key: true |
 | user        | references | foreign_key: true |
 
 ### Association
 
-- belongs_to :item
-- belongs_to :user
+- has_one :item
+- has_one　:user
+
 
 ## address table
 
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
-| form-text   | text       | null: false       |
+| form_text   | text       | null: false       |
 | items       | references | foreign_key: true |
 | user        | references | foreign_key: true |
 
 ### Association
 
-- belongs_to :item
-- belongs_to :user
 - belongs_to :order
