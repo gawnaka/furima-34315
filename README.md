@@ -50,7 +50,7 @@ Things you may want to cover:
 |-------------------------------------|------------|-------------------|
 |  weight_bold-text                   | text       | null: false       |
 |  price_content                      | text       | null: false       |
-|　sell_pricz|                        integer      | null: false        |
+|  sell_pricz                         |            integer      | null: false |
 |  user                               | references | foreign_key: true |
 
 ### Association
@@ -76,7 +76,7 @@ Things you may want to cover:
 | Column      | Type       | Options           |
 |-------------|------------|-------------------|
 | item       | references | foreign_key: true |
-| user        | references | foreign_key: true |
+| user       | references | foreign_key: true |
 
 ### Association
 
